@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+body{
+    background-color: rgb(37, 37, 37);
+}
+
+main h1{
+    color: rgb(209, 209, 247);
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+}
+
+#formulario{
+    text-align: center;
+    margin-top: 100px;
+}
+
+#formulario input{
+    width: 300px;
+    height: 25px;
+    border-radius: 10px;
+    
+}
+
+#formulario button{
+    width: 150px;
+    height: 25px;
+    border-radius: 10px;
+}
