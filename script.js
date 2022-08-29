@@ -13,6 +13,8 @@ const calculo = () => {
 
     var imc = pesoTexto / (alturaTexto * 2);
 
+    var user = [nomeTexto, pesoTexto, alturaTexto, imc]
+
     document.write("Olá, " + nomeTexto)
     linha()
     document.write("Seu peso é: " + pesoTexto + "Kg")
@@ -29,7 +31,7 @@ const calculo = () => {
         classifica = "Sobrepeso"
         linha()
         document.write("Sua classificação é: " + classifica);
-    }else if(imc = 30 && imc < 40){
+    }else if(imc > 30 && imc < 40){
         classifica = "Obesidade"
         linha()
         document.write("Sua classificação é: " + classifica);
@@ -38,5 +40,4 @@ const calculo = () => {
         linha()
         document.write("Sua classificação é: " + classifica);
     }
-    
 }
