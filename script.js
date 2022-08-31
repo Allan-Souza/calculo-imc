@@ -15,13 +15,13 @@ const calculo = () => {
 
     var user = [nomeTexto, pesoTexto, alturaTexto, imc]
 
-    document.write("Olá, " + nomeTexto)
+    document.write("Olá, " + user[0])
     linha()
-    document.write("Seu peso é: " + pesoTexto + "Kg")
+    document.write("Seu peso é: " + user[1] + "Kg")
     linha()
-    document.write("Sua altura é: " + alturaTexto + "m")
+    document.write("Sua altura é: " + user[2] + "m")
     linha()
-    document.write(" Seu IMC é de: " + imc.toFixed(2))
+    document.write(" Seu IMC é de: " + user[3].toFixed(2))
 
     if(imc = 18 && imc < 25){
         classifica = "Normal"
