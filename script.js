@@ -9,7 +9,6 @@ const calculo = () => {
     var pesoTexto = peso.value;
     var altura = document.querySelector("#altura");
     var alturaTexto = altura.value;
-    var classifica = "";
 
     var imc = pesoTexto / (alturaTexto ** 2);
 
@@ -24,20 +23,16 @@ const calculo = () => {
     document.write(" Seu IMC é de: " + user[3].toFixed(2))
 
     if(imc = 18 && imc < 25){
-        classifica = "Normal"
         linha()
-        document.write("Sua classificação é: " + classifica);
+        document.write("Sua classificação é Normal");
     }else if(imc = 25 && imc < 30){
-        classifica = "Sobrepeso"
         linha()
-        document.write("Sua classificação é: " + classifica);
+        document.write("Sua classificação é Sobrepeso");
     }else if(imc > 30 && imc < 40){
-        classifica = "Obesidade"
         linha()
-        document.write("Sua classificação é: " + classifica);
+        document.write("Sua classificação é Obesidade");;
     }else if(imc > 40){
-        classifica = "Obesidade grave"
         linha()
-        document.write("Sua classificação é: " + classifica);
+        document.write("Sua classificação é Obesidade grave");
     }
 }
