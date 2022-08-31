@@ -11,7 +11,7 @@ const calculo = () => {
     var alturaTexto = altura.value;
     var classifica = "";
 
-    var imc = pesoTexto / (alturaTexto * 2);
+    var imc = pesoTexto / (alturaTexto ** 2);
 
     var user = [nomeTexto, pesoTexto, alturaTexto, imc]
 
